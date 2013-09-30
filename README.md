@@ -1,5 +1,5 @@
-[*Application For Funny Pictures Available Online*]
+#Application For Funny Pictures Online
 
-(http://funny_pictures.com)
+[*Funny Pictures Online*](http://funny_pictures.com)
 
 by Hev Saing
