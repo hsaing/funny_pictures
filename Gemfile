@@ -2,13 +2,16 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 
-group :production do
-	gem 'pg'
-end	
-
 group :development, :test do
 	gem 'sqlite3'
 end	
+
+group :production do
+  gem 'pg' # dont want sqlite in production
+  gem 'unicorn' # make sure you follow installation instructions for this gem
+  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
+end
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
